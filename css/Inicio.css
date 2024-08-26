@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: yellowgreen;
+}
+figure{
+    width: 100%;
+    height: auto;
+}
+.fig-img{
+    min-width: auto;
+    min-height: auto;
+    align-items: first baseline;
+}
+h1{
+    text-align: center;
+    animation: mover-izquierda-derecha 2s infinite;
+}
+@keyframes mover-izquierda-derecha{
+    from{
+        transform: translateX(-100PX);
+    }
+    to{
+        transform: translateX(10px)
+    }
+}
+.contenedor{
+    max-width: 50%;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+

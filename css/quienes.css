@@ -1,0 +1,18 @@
+body{
+    background-color: chartreuse;
+    box-sizing: border-box;
+}
+.div-1{
+    background-color: aqua;
+    display: flex;
+    float: left;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+h1{
+    text-align: center;
+    color:blue;
+    font-size: 30px;
+}

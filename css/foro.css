@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTLoVwr_2YPEK0WjrtoFT3HESymB8ZLKeLA&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: red;
+}
+
+main {
+    padding: 20px;
+    background-color: #d6c316;
+}
+
+.section-1 {
+    padding: 10px;
+    background-color: aqua;
+    border: 4px red solid;
+}
+.section-2 {
+    width: 950px;
+    height: 800px;
+    padding: 50px;
+    background-color: lightgreen;
+}
+button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #008ba3;
+}
+
+.respuestas img {
+    width: 100%;
+}
+.grupos {
+    background-color: #ffeb3b;
+    padding: 5px;
+    border-radius: 5px;
+    width: 800px;
+    height: 100px;
+}
+h2 {
+    text-align: left;
+}
+.table-1 {
+    border: 2px;
+}
+tr, td, img {
+    text-align: right;
+}
+.div-2 {
+    display: block;
+    background-color: chartreuse;
+    width: 30%;
+    height: 178px;
+}
+img{
+    text-align: right;    
+}
+a{
+    text-decoration: none;
+}
+

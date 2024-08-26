@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up - Neura-ku</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/signup.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <main class="main">
+    <form class="form">
+      <div class="form__header">
+        <h2 class="form__title">Crear una cuenta</h2>
+        <p class="form__description">Empieza tu prueba de 30 días gratis. Cancela cuando quieras</p>
+      </div>
+
+      <div class="form__body">
+        <div class="form__field">
+          <label class="form__label" for="name">Nombre</label>
+          <i class='bx bx-user-pin'></i>
+          <input class="form__input" type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="username">Usuario</label>
+          <i class='bx bx-user'></i>
+          <input class="form__input" type="text" id="username" name="username" placeholder="Crea un nombre de usuario"
+            pattern="^[a-zA-Z0-9]+$" required>
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="email">Email</label>
+          <i class='bx bxs-envelope'></i>
+          <input class="form__input" type="email" id="email" name="email" placeholder="Escribe tu correo electrónico"
+            required>
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="password">Password</label>
+          <i class='bx bx-key'></i>
+          <input class="form__input form__input--password" type="password" id="password" name="password"
+            placeholder="Crea una contraseña" required>
+          <i class='form__eye form__eye--show bx bx-show'></i>
+        </div>
+
+        <div class="form__requirements">
+          <span class="form__requirement" id="length">
+            <i class='form__check bx bx-check-circle'></i>
+            Debe contener al menos 8 caracteres
+          </span>
+          <span class="form__requirement" id="uppercase">
+            <i class='form__check bx bx-check-circle'></i>
+            Debe contener al menos una letra mayúscula
+          </span>
+          <span class="form__requirement" id="lowercase">
+            <i class='form__check bx bx-check-circle'></i>
+            Debe contener al menos una letra minúscula
+          </span>
+          <span class="form__requirement" id="number">
+            <i class='form__check bx bx-check-circle'></i>
+            Debe contener al menos un número
+          </span>
+          <span class="form__requirement" id="special">
+            <i class='form__check bx bx-check-circle'></i>
+            Debe contener al menos un carácter especial ( !@#$%^&*(),.?":{}| )
+          </span>
+        </div>
+
+        <div class="submit">
+          <div class="submit__container">
+            <button class="submit__button" type="submit">
+              <a href="https://www.google.co.uk/" target="_blank">Crear cuenta con Google</a>
+            </button>
+            <button class="submit__button" type="submit">
+              <a href="https://www.facebook.com/" target="_blank">Crear cuenta con Facebook</a>   
+            </button>
+          </div>
+        </div>
+
+        <p>¿Tienes una cuenta? <a href="#">Inicia sesión</a></p>
+      </div>
+    </form>
+  </main>
+
+  <script defer src="../js/form.js"></script>
+</body>
+
+</html>

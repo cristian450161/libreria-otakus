@@ -1,0 +1,161 @@
+@import url("./base.css");
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main {
+  min-height: 100dvh;
+  padding: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--form-color);
+  font-family: var(--form-font);
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* *** FORM *** */
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--small-font-size);
+  padding: var(--normal-font-size);
+  text-align: center;
+  border: 0.2rem solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: var(--biggest-font-size);
+  box-shadow: 0 var(--smaller-font-size) 2rem rgba(0, 0, 0, 0.1);
+}
+
+.form__field {
+  position: relative;
+  /* Permite la posición absoluta de los íconos */
+}
+
+.form__input {
+  padding: var(--smaller-font-size) var(--input-padding);
+  border-radius: var(--normal-font-size);
+  width: 100%;
+  border: none;
+  padding-left: 30px;
+}
+
+.form__input:focus {
+  outline: 2px solid #525647;
+}
+
+.form__email {
+  padding: var(--smaller-font-size);
+  border-radius: var(--small-font-size);
+}
+
+.form__input--password {
+  padding-right: 2.6rem;
+}
+
+.form__eye {
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  transform: translateY(-50%);
+  color: var(--ultra-violet);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* ***FORM BODY */
+.form__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 10px;
+  max-width: 70%;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+/* *** PASSWORD REQUIREMENTS */
+.form__requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 97%;
+  margin: 1rem auto;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.form__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* *** FORM SUBMIT */
+.submit {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit__button {
+  width: 100%;
+  font-size: 1rem;
+  background-color: var(--submit-color);
+  margin: var(--smaller-font-size);
+  padding: var(--small-font-size) var(--normal-font-size);
+  border-radius: var(--smaller-font-size);
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out
+}
+
+.submit__button:hover {
+  cursor: pointer;
+  color: var(--isabelline);
+  background-color: rgb(146, 241, 21);
+}
+
+.submit__line {
+  width: 100%;
+  height: auto;
+  block-size: auto;
+  max-inline-size: 100%;
+  object-fit: cover;
+  /* sizes */
+  max-height: 1.5rem;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: bold;
+  font-size: 20px;
+  text-wrap: balance;
+}
+
+/* *** ICONS SIZE */
+.submit__icons {
+  width: 100%;
+  height: auto;
+  block-size: auto;
+  max-inline-size: 100%;
+  object-fit: cover;
+  /* sizes */
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+
+  display: inline-block;
+  /* Asegura que el ícono se comporte como un bloque en línea */
+  vertical-align: middle;
+  /* Alinea verticalmente con el texto */
+}
+
+/* *** Email error message *** */
+.error-message {
+  color: #F44336;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semibold);
+}

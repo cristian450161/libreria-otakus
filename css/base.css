@@ -1,0 +1,61 @@
+/* *** *** BASE *** *** */
+/* *** RESET CSS */
+*,
+*:before,
+*:after {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+  color: blue;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* *** VARIABLES CSS */
+:root {
+  /* Colors */
+  --space-cadet: #22223bff;
+  --ultra-violet: #4a4e69ff;
+  --pale-color: #c9ada7ff;
+  --isabelline: #F2F5EA;
+  --almond-color: #f1dac4ff;
+  --body-color: hsl(215, 32%, 27%);
+  --primary-color: #7A7BA7;
+  --form-color: #9a8c98ff;
+  --button-color: #3C4FCE;
+  --submit-color: #6883ba;
+  --error-color: #DD1417;
+  --border-color: #4A90E2;
+
+  /* Font Size */
+  --body-font: 'Ubuntu', Arial, sans-serif;
+  --form-font: "Urbanist", Arial;
+  --biggest-font-size: 1.25rem;
+  --normal-font-size: 1.1rem;
+  --small-font-size: 0.95rem;
+  --smaller-font-size: 0.5rem;
+  --letter-spacing: 0.024rem;
+  --input-padding: 0.7rem;
+
+  /* Font Weight */
+  --font-small: 300;
+  --font-normal: 400;
+  --font-standard: 500;
+  --font-medium: 600;
+  --font-semibold: 900;
+}

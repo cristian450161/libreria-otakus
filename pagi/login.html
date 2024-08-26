@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In - Neura-ku</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="../js/form.js"></script>
+</head>
+<body>
+  <main class="main">
+    <form class="form">
+      <div class="form__header">
+        <h2 class="form__title">Bienvenido de nuevo</h2>
+        <p class="form__description">Por favor, ingresa tus datos para iniciar sesión</p>
+      </div>
+      <div class="form__body">
+
+        <div class="form__field">
+          <label class="form__label" for="email">Usuario</label>
+          <i class='bx bx-user'></i>
+          <input class="form__input" type="text" id="username" name="username"
+            placeholder="Escribe tu nombre de usuario" pattern="^[a-zA-Z0-9]+$" required>
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="password">Password</label>
+          <i class='bx bx-key'></i>
+          <input class="form__input form__input--password" type="password" id="password" name="password"
+            placeholder="Escribe tu contraseña" required>
+          <i class='form__eye form__eye--show bx bx-show'></i>
+        </div>
+
+        <div class="form__check">
+          <div class="form__group">
+            <input class="form__checkbox" type="checkbox" id="remember" name="remember">
+            <label class="form__label form__label--checkbox" for="remember">Recordarme</label>
+          </div>
+
+          <a href="#">Olvidé mi contraseña</a>
+        </div>
+
+        <div class="submit">
+          <div class="submit__container">
+            <button class="submit__button" type="submit"><a href="login.html" target="_blank">Crear una cuenta</a></button>
+            <button class="submit__button" type="submit">
+              <a href="https://www.facebook.com/" target="_blank">Iniciar sesión</a>
+            </button>
+            <button class="submit__button" type="submit">
+              <a href="https://www.google.co.uk/" target="_blank">Iniciar sesión con Google</a> 
+            </button>
+            
+          </div>
+        </div>
+        
+        <section class="form__account">
+          <span>¿No tienes una cuenta?</span>
+          <a class="s-a" href="login.html" target="_blank">Crea una cuenta gratis</a>
+        </section>
+      </div>
+    </form>
+  </main>
+  
+</body>
+</html>
